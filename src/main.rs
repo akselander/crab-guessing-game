@@ -20,10 +20,9 @@ fn main() {
 
         println!("You guessed {guess}");
 
-        match guess.cmp(&69) {
-            Ordering::Less => {}
-            Ordering::Greater => {}
-            Ordering::Equal => println!("( ͡° ͜ʖ ͡°)"),
+
+        if guess == 69 {
+            println!("( ͡° ͜ʖ ͡°)");
         }
 
         match guess.cmp(&secret_number) {
